@@ -1,5 +1,5 @@
 {
-  "name": "react-module-container",
+  "name": "@wix/experimental-react-module-container",
   "version": "1.0.1486",
   "description": "",
   "homepage": "",
@@ -23,11 +23,11 @@
   ],
   "main": "dist/src/index.js",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "http://npm.dev.wixpress.com/"
   },
   "yoshi": {
     "entry": {
-      "react-module-container": "./react-module-container.js",
+      "experimental-react-module-container": "./react-module-container.js",
       "demo": "./demo/demo.js",
       "module": "./demo/module.js",
       "lazy/angular-module": "./lazy/angular-module.js",

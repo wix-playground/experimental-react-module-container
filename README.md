@@ -1,14 +1,14 @@
 ![logo](assets/module_container_github.svg)
 
 ## Why?
-It's a small library that allows big things. 
+It's a small library that allows big things.
 Its main purpose is to enable building large-scale application with lazy-loaded modules based on either React or Angular.
 
 ## Getting started or 4 simple steps to convert to lazy module
-### Step 1: Add `react-module-container`
-Add `react-module-container` npm module as your dependency.
+### Step 1: Add `experimental-react-module-container`
+Add `experimental-react-module-container` npm module as your dependency.
 ```bash
-npm install --save react-module-container
+npm install --save experimental-react-module-container
 ```
 ### Step 2: Create manifest file and register your component
 Create a `manifest.js` file that describe your future lazy module. It can be either [Angular](./docs/ANGULAR-LAZY-COMPONENT.md) or [React](./docs/REACT-LAZY-COMPONENT.md) lazy module.
@@ -61,8 +61,8 @@ class App extends React.Component {
 * [`AngularLazyComponent`](./docs/ANGULAR-LAZY-COMPONENT.md)
 
 ## Demo
-* `git clone git@github.com:wix/react-module-container.git`
-* `cd react-module-container`
+* `git clone git@github.com:wix/experimental-react-module-container.git`
+* `cd experimental-react-module-container`
 * `npm install`
 * `npm start`
 * `http://localhost:3200`
