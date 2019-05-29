@@ -43,25 +43,25 @@ describe('tag appender', () => {
     expect(document.getElementsByTagName('link').length).to.equal(1);
   });
 
-  it('filesAppender should set optional flag to false by default', done => {
+  it('filesAppender should set optional flag to true by default', done => {
     const link1 = {url: 'http://123.js/'};
     const link2 = {url: 'http://456.js/'};
 
-    filesAppender([link1, link2]).catch(() => done());
+    filesAppender([link1, link2]).then(() => done());
     setTimeout(() => {
       document.getElementsByTagName('script')[0].onerror();
+      document.getElementsByTagName('script')[1].onerror();
     }, 100);
   }).timeout(1000);
 
   it('filesAppender should support optional flag', done => {
-    const link1 = {url: 'http://123.js/', optional: true};
-    const link2 = {url: 'http://456.js/', optional: true};
+    const link1 = {url: 'http://123.js/', optional: false};
+    const link2 = {url: 'http://456.js/', optional: false};
 
-    filesAppender([link1, link2]).then(() => done());
+    filesAppender([link1, link2]).catch(() => done());
 
     setTimeout(() => {
       document.getElementsByTagName('script')[0].onerror();
-      document.getElementsByTagName('script')[1].onerror();
     }, 100);
   }).timeout(1000);
 

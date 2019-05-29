@@ -74,7 +74,7 @@ function append(file, crossorigin) {
   return tagAppender(file, file.split('.').pop(), crossorigin);
 }
 
-function onCatch(err, optional = false) {
+function onCatch(err, optional = true) {
   console.error('filesAppender failed to load ' + err);
   return optional ? Promise.resolve() : Promise.reject(err);
 }
