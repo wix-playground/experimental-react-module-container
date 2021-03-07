@@ -54,7 +54,7 @@
     "redux": "^3.6.0",
     "sinon": "^2.4.0",
     "sinon-chai": "^2.12.0",
-    "yoshi": "^1.2.0"
+    "@wix/yoshi": "^1.2.0"
   },
   "babel": {
     "presets": [
